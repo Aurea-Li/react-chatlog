@@ -6,8 +6,12 @@ import Timestamp from './Timestamp';
 
 const Message = (props) => {
 
+  const messageClass = 'chat-entry ' + (props.name === 'Vladimir' ? 'local' : 'remote');
+
+  console.log(messageClass);
+
   return (
-    <section>
+    <section class={messageClass}>
 
       <h2 class="entry-name"> {props.name} </h2>
       <div class="entry-bubble">

@@ -10,7 +10,7 @@ const ChatLog = (props) => {
   });
 
   return (
-    <section class="chat-log chat-entry local">
+    <section class="chat-log">
       {chatLog}
     </section>
   );
